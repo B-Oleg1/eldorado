@@ -4,7 +4,6 @@
     .quality__item__img
         margin-bottom: 20px
     .quality__item__descr
-        padding: 0
         margin-right: 15px
     .design__item
         width: 44%
@@ -28,23 +27,20 @@
     .accessories__item__descr-second-1
         display: block
 
-@media (max-width: 575px)
+@media (max-width: 669px)
     .applications__item
         display: flex
-        min-width: 100%
+        width: 90%
         margin-left: 25px
         .applications__item__img
             display: flex
             align-items: center
-            margin: 0 18px 0 0
+            margin-right: 18px
         .applications__item__descr
             display: flex
             align-items: center
             font-size: 12px
             margin: 30px 0
-    .applications__item:nth-child(odd)
-        .applications__item__descr
-            margin-right: 25px
     .applications__item:nth-child(even)
         border-top: 1px solid #dfdfdf
         border-bottom: 1px solid #dfdfdf
@@ -52,6 +48,8 @@
             margin-right: 0
             margin-left: 18px
             order: 2
+
+@media (max-width: 575px)
     .accessories__item:nth-child(n+3)
         width: 43%
     .quality__photo
@@ -59,6 +57,17 @@
         margin-left: 0
         display: block
         margin: 0 auto
+    .quality__item
+        padding-left: 15px
+        max-width: 100%
+        &__img
+            margin-right: 0
+            margin-left: 0
+            max-width: 100%
+        &__descr
+            margin-right: 0
+            margin-left: 0
+            max-width: 100%
 
 @media (max-width: 529px)
     .header
